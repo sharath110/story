@@ -896,6 +896,7 @@ node_management_menu() {
                 restore_backup  # Call the remove node function
                 ;;
 
+                *)
                 print_info "Invalid option, please select a number between 1 and 17." 
             
         esac
