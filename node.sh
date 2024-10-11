@@ -895,11 +895,9 @@ node_management_menu() {
                 print_info "You selected to Full Backup node."
                 restore_backup  # Call the remove node function
                 ;;
+
+                print_info "Invalid option, please select a number between 1 and 17." 
             
-
-
-                print_info "Invalid option, please select a number between 1 and 20." 
-                ;;
         esac
     done
 }
