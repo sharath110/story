@@ -56,8 +56,6 @@ Conclusion
 This automatic script, developed by sharath110, is a comprehensive tool designed to simplify Story Protocol node management. With a clear and organized interface, it allows users to efficiently handle node operations and focus on higher-level tasks. Whether you are a newcomer or an experienced user, this script makes node management seamless and secure, ensuring your blockchain node runs smoothly.
 
 
-This version clarifies some points, adds flow, and ensures readability while maintaining all the technical details.
-
 
 
 
