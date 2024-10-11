@@ -6,7 +6,7 @@ bash
 Copy code
 
 ```
-cd $HOME && wget https://github.com/sharath110/story/node.sh && chmod +x node.sh && ./node.sh
+cd $HOME && wget https://raw.githubusercontent.com /sharath110/story/node.sh && chmod +x node.sh && ./node.sh
 ```
 
 Overview of the Node Management Auto Script
