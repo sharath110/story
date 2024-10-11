@@ -61,8 +61,3 @@ This version clarifies some points, adds flow, and ensures readability while mai
 
 
 
-
-
-
-Download the latest iOS or Android app to try advanced voice mode
-Get more natural, real-time conversations with advanced voice. Senses and responds to humor, sarcasm, interruptions, and more.
