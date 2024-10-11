@@ -4,9 +4,10 @@ To install the necessary tools for managing your Story Protocol node, run the fo
 
 bash
 Copy code
+
+```
 cd $HOME && wget https://github.com/sharath110/story/node.sh && chmod +x node.sh && ./node.sh
-Repository:
-Story-Node-Tool Setup Script
+```
 
 Overview of the Node Management Auto Script
 This script is designed to simplify node management for the Story Protocol by providing a user-friendly, interactive interface. Users can perform a variety of tasks with minimal manual input, allowing for easy maintenance and operation of a Story Protocol node.
