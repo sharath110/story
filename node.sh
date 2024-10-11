@@ -502,64 +502,7 @@ stake_ip() {
 
 
 
-unstake_ip() {
-    print_info "<================= Unstake IP ================>"
-    print_info "You need to have staked IP to proceed with unstaking."
-    
-    # Check sync status
-    while true; do
-        print_info "Checking the sync status..."
-        SYNC_STATUS=$(curl -s localhost:26657/status | jq '.result.sync_info.catching_up')
 
-        if [ "$SYNC_STATUS" == "false" ]; then
-            print_info "Node sync complete. Proceeding to unstake."
-            break  # Exit the loop if the node is synced
-        else
-            print_info "Node is still catching up. Please check the sync status:"
-            print_info "Run the following command to check the sync info:"
-            print_info "curl -s localhost:26657/status | jq '.result.sync_info'"
-            print_info "The sync status is currently catching_up: true."
-
-            # Ask user if they want to check again or return to the menu
-            read -p "Do you want to check the sync status again? (y/n): " user_input
-            if [[ "$user_input" =~ ^[Yy]$ ]]; then
-                continue  # Continue the loop to check sync status again
-            elif [[ "$user_input" =~ ^[Nn]$ ]]; then
-                print_info "Returning to the Node Management Menu..."
-                node_management_menu  # Call the node_management_menu function directly
-                return  # Exit the function
-            else
-                print_info "Invalid input. Please enter 'y' or 'n'."
-            fi
-        fi
-    done
-
-    # Ask the user how many IP they want to unstake
-    read -p "Enter the amount of IP you want to unstake (minimum 1 IP): " UNSTAKE_AMOUNT
-
-    # Validate input (minimum unstake must be 1)
-    if [ "$UNSTAKE_AMOUNT" -lt 1 ]; then
-        print_info "The unstake amount must be at least 1 IP. Exiting."
-        exit 1
-    fi
-
-    # Convert stake amount to Wei (1 IP = 10^18 Wei)
-    UNSTAKE_WEI=$(python3 -c "print(int($UNSTAKE_AMOUNT * 1000000000000000000))")  # Ensure integer output
-
-    # Unregister the validator using the imported private key
-    story validator unstake --validator-pubkey "$BASE64_PUB_KEY" --unstake "$UNSTAKE_WEI" --private-key "$PRIVATE_KEY"
-
-    # Wait for 2 minutes (120 seconds) before proceeding
-    print_info "Waiting for 2 minutes for the changes to reflect..."
-    sleep 120
-
-    # Inform the user where they can check their validator
-    print_info "You can check your validator's status and unstaking on the following explorer:"
-    print_info "Explorer: https://testnet.story.explorers.guru/"
-
-    # Return to node management menu
-    node_management_menu
-}
 
 
 # Function to update snapshot
@@ -845,40 +788,14 @@ restore_backup() {
 
 
 
-remove_node() {
-    print_info "<================= Remove Node ================>"
 
-    # Node removal section
-    read -p "Are you sure you want to remove the node? Type 'Yes' to confirm or 'No' to cancel: " confirmation
-    confirmation=$(echo "$confirmation" | tr '[:upper:]' '[:lower:]')  # Convert input to lowercase
-
-    if [[ "$confirmation" == "yes" ]]; then
-        print_info "Removing Node..."
-        sudo systemctl stop story-geth
-        sudo systemctl stop story
-        sudo systemctl disable story-geth
-        sudo systemctl disable story
-        sudo rm /etc/systemd/system/story-geth.service
-        sudo rm /etc/systemd/system/story.service
-        sudo systemctl daemon-reload
-        sudo rm -rf $HOME/.story
-        sudo rm $HOME/go/bin/story-geth
-        sudo rm $HOME/go/bin/story
-        print_info "Node successfully removed!"
-    else
-        print_info "Node removal canceled."
-    fi
-
-    # Return to node management menu
-    node_management_menu
-}
 
 
 # Function to display the Node Management Menu
 node_management_menu() {
 
     print_info ""
-    print_info "<============= Created by CryptoBuroMaster ============>"
+    print_info "<============= Created by sharath110 ============>"
     print_info ""
     print_info "<================= Node Management Menu ===============>"
     
@@ -898,11 +815,8 @@ node_management_menu() {
         "Private-Key Checker"
         "Balance-Checker"
         "Stake-IP"
-        "UnStake-IP"
         "Full-Backup"
         "Recovery-Backup"
-        "Remove-Node"
-        "Exit"
     )
    
     # Display options with numbers
@@ -974,26 +888,14 @@ node_management_menu() {
                 stake_ip  # Call the stake IP function
                 ;;
             16)
-                print_info "You selected to unstake IP."
-                unstake_ip  # Call the unstake IP function
-                ;;
-            17)
                 print_info "You selected to Full Backup node."
                 full_backup  # Call the remove node function
                 ;;
-            18)
+            17)
                 print_info "You selected to Full Backup node."
                 restore_backup  # Call the remove node function
                 ;;
-            19)
-                print_info "You selected to remove the node."
-                remove_node  # Call the remove node function
-                ;;
-            20)
-                print_info "Exiting the script."
-                exit 0  # Exit the script after breaking the loop
-                ;;
-            *)
+            
 
 
                 print_info "Invalid option, please select a number between 1 and 20." 
