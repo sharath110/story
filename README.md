@@ -56,6 +56,7 @@ Each menu option is mapped to a function that handles specific node management t
 15. Stake IP: Stakes tokens, allowing the node to participate in validator activities.
 16. Full Backup: Backs up the node’s data and configuration files.
 17. Recovery Backup: Restores the node from a previous backup.
+    
 3. Interactive Prompt
 The script runs in a loop until the user chooses the "Exit" option (Option 17). For every user input, the script displays relevant information and executes the chosen function.
 
