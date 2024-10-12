@@ -35,6 +35,7 @@ It offers 17 different options to manage the Story Protocol node.
 The menu includes tasks like "Install Dependencies," "Story-Geth Binary Setup," "Node Status," and more.
 Once a user selects an option, the script validates the input and calls the corresponding function to execute the desired task.
 2.  Menu Options Overview
+
 Each menu option is mapped to a function that handles specific node management tasks. Here’s a brief explanation of the main options:
 
 Install Dependencies: Automatically installs all necessary software packages and libraries required for node operation.
