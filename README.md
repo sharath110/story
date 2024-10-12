@@ -59,7 +59,7 @@ Each menu option is mapped to a function that handles specific node management t
 
     
       Interactive Prompt
-The script runs in a loop until the user chooses the "Exit" option (Option 17). For every user input, the script displays relevant information and executes the chosen function.
+The script runs in a loop until the user chooses the control +C For every user input, the script displays relevant information and executes the chosen function.
 
 
       Error Handling
