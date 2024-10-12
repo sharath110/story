@@ -38,9 +38,10 @@ Once a user selects an option, the script validates the input and calls the corr
 
 Each menu option is mapped to a function that handles specific node management tasks. Here’s a brief explanation of the main options:
 
-Install Dependencies: Automatically installs all necessary software packages and libraries required for node operation.
-Story-Geth Binary Setup: Sets up the Story-Geth binary to enable Ethereum-compatible layer interaction.
-Story Binary Setup: Configures the Story Protocol’s core binary for node functionality.
+1. Install Dependencies: Automatically installs all necessary software packages and libraries required for node operation.
+
+2. Story-Geth Binary Setup: Sets up the Story-Geth binary to enable Ethereum-compatible layer interaction.
+3. Story Binary Setup: Configures the Story Protocol’s core binary for node functionality.
 Setup Moniker Name: Allows the user to assign a unique name (moniker) to their node.
 Update Peers: Updates the node’s peer list for better network synchronization.
 Update Snapshot: Syncs the node using the latest available blockchain snapshot.
