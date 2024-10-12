@@ -42,20 +42,20 @@ Each menu option is mapped to a function that handles specific node management t
 
 2. Story-Geth Binary Setup: Sets up the Story-Geth binary to enable Ethereum-compatible layer interaction.
 3. Story Binary Setup: Configures the Story Protocol’s core binary for node functionality.
-Setup Moniker Name: Allows the user to assign a unique name (moniker) to their node.
-Update Peers: Updates the node’s peer list for better network synchronization.
-Update Snapshot: Syncs the node using the latest available blockchain snapshot.
-Stop Node: Safely shuts down the node’s processes.
-Start Node: Starts the node and connects it to the network.
-Refresh Node: Restarts the node to apply updates with minimal downtime.
-Logs Checker: Displays the node’s logs for monitoring and debugging purposes.
-Node Status: Shows the current status and health of the node.
-Validator Info: Displays details about the node’s validator status.
-Private Key Checker: Verifies and displays the node’s private key.
-Balance Checker: Checks the token balance of the node.
-Stake IP: Stakes tokens, allowing the node to participate in validator activities.
-Full Backup: Backs up the node’s data and configuration files.
-Recovery Backup: Restores the node from a previous backup.
+4. Setup Moniker Name: Allows the user to assign a unique name (moniker) to their node.
+5. Update Peers: Updates the node’s peer list for better network synchronization.
+6. Update Snapshot: Syncs the node using the latest available blockchain snapshot.
+7. Stop Node: Safely shuts down the node’s processes.
+8. Start Node: Starts the node and connects it to the network.
+9. Refresh Node: Restarts the node to apply updates with minimal downtime.
+10. Logs Checker: Displays the node’s logs for monitoring and debugging purposes.
+11. Node Status: Shows the current status and health of the node.
+12. Validator Info: Displays details about the node’s validator status.
+13. Private Key Checker: Verifies and displays the node’s private key.
+14. Balance Checker: Checks the token balance of the node.
+15. Stake IP: Stakes tokens, allowing the node to participate in validator activities.
+16. Full Backup: Backs up the node’s data and configuration files.
+17. Recovery Backup: Restores the node from a previous backup.
 3. Interactive Prompt
 The script runs in a loop until the user chooses the "Exit" option (Option 17). For every user input, the script displays relevant information and executes the chosen function.
 
