@@ -66,6 +66,21 @@ Conclusion
 This automatic script, developed by sharath110, is a comprehensive tool designed to simplify Story Protocol node management. With a clear and organized interface, it allows users to efficiently handle node operations and focus on higher-level tasks. Whether you are a newcomer or an experienced user, this script makes node management seamless and secure, ensuring your blockchain node runs smoothly.
 
 
+Additional Information
+Prerequisites
 
+Operating System: Unix-based (Linux, macOS)
 
+Permissions: Ensure you have the necessary permissions to execute scripts and install dependencies.
+
+Internet Connection: Required to download the installation script and dependencies.
+
+Usage
+
+1. Open Terminal: Access your terminal application.
+2. Run Installation Command: Execute the provided bash command to download and run the installer.
+3. Follow Prompts: The interactive script will guide you through various setup and management tasks.
+Support
+
+For issues or further assistance, please visit the Story Protocol GitHub Repository or contact the maintainer direct
 
