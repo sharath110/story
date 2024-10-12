@@ -10,6 +10,7 @@ cd $HOME && wget https://raw.githubusercontent.com/sharath110/story/main/node.sh
 ```
 
 Overview of the Node Management Auto Script
+
 This script is designed to simplify node management for the Story Protocol by providing a user-friendly, interactive interface. Users can perform a variety of tasks with minimal manual input, allowing for easy maintenance and operation of a Story Protocol node.
 
 Key Features:
