@@ -15,11 +15,17 @@ This script is designed to simplify node management for the Story Protocol by pr
 
 Key Features:
 Dependency Management: Automatically install and configure all necessary dependencies for the node.
+
 Binary Setup: Easily manage node binaries, including installation, updates, and ensuring the node operates on the correct versions.
+
 Node Operations: Perform essential node operations such as starting, stopping, refreshing, and monitoring the node's status.
+
 Validator Key Management: Generate, back up, and recover validator keys for enhanced security and ease of use.
+
 Staking and Balances: Securely interact with the network to check balances and stake tokens efficiently.
+
 Backup and Recovery: Back up and restore important node data to safeguard against data loss.
+
 The script is interactive, waiting for user input to select and perform the desired operation. It’s accessible to both beginners and experienced users, automating key tasks and reducing the complexity of node management.
 
 Code Breakdown of the Menu Function
