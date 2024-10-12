@@ -82,5 +82,5 @@ Usage
 3. Follow Prompts: The interactive script will guide you through various setup and management tasks.
 Support
 
-For issues or further assistance, please visit the Story Protocol GitHub Repository or contact the maintainer direct
+For issues or further assistance, please visit the  Story Protocol GitHub Repository  or contact the maintainer direct
 
