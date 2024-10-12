@@ -29,12 +29,12 @@ Backup and Recovery: Back up and restore important node data to safeguard agains
 The script is interactive, waiting for user input to select and perform the desired operation. It’s accessible to both beginners and experienced users, automating key tasks and reducing the complexity of node management.
 
 Code Breakdown of the Menu Function
-1. node_management_menu()
+ node_management_menu()
 This is the primary function that presents a menu to the user.
 It offers 17 different options to manage the Story Protocol node.
 The menu includes tasks like "Install Dependencies," "Story-Geth Binary Setup," "Node Status," and more.
 Once a user selects an option, the script validates the input and calls the corresponding function to execute the desired task.
-2.  Menu Options Overview
+ Menu Options Overview
 
 Each menu option is mapped to a function that handles specific node management tasks. Here’s a brief explanation of the main options:
 
