@@ -825,7 +825,7 @@ node_management_menu() {
     done
 
     while true; do
-        read -p "Please select an option (1-20): " choice
+        read -p "Please select an option (1-17): " choice
          case $choice in
             1)
                 print_info "You selected to install dependencies."
